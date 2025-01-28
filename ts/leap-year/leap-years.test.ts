@@ -1,3 +1,4 @@
+import { isLeapYear } from "./leap-year"
 
 describe('leap years', () => {
 
@@ -5,9 +6,9 @@ describe('leap years', () => {
 
   it('All years divisible by 400 ARE leap years', () => {
     leapYearsDivisibleBy400.forEach(year => {
+      
+      const result = isLeapYear(year)
 
-      // TODO: implement leap year logic
-      const result = true
       expect(result).toBe(true)
     })
   })
