@@ -13,4 +13,10 @@ describe('leap years', () => {
     })
   })
 
+  it('All years divisible by 100 but not by 400 are NOT leap years', () => {
+    const year = 1900
+    const result = isLeapYear(year)
+    expect(result).toBe(false)
+  })
+
 })
