@@ -19,4 +19,10 @@ describe('leap years', () => {
     expect(result).toBe(false)
   })
 
+  it('All years divisible by 4 but not by 100 ARE leap years', () => {
+    const year = 2008
+    const result = isLeapYear(year)
+    expect(result).toBe(true)
+  })
+
 })
